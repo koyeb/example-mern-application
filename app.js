@@ -32,6 +32,11 @@ app.use(cors());
 app.use('/', indexRouter);
 app.use('/api/posts', postsRouter);
 
+// Return the client
+app.get('/posts*', (_, res) => {
+  res.sendFile(path.join(__dirname, 'public') + '/index.html');
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
