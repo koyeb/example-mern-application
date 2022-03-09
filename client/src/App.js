@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Post from './pages/post';
 import Create from './pages/create';
@@ -11,7 +11,7 @@ import Container from 'react-bootstrap/Container';
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar bg="dark" expand="lg" variant="dark">
         <Container>
           <Navbar.Brand href="/">My Blog</Navbar.Brand>
@@ -27,7 +27,7 @@ function App() {
         <Route path="/posts/new" element={<Create />} />
         <Route path="/posts/:id/edit" element={<Edit />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

@@ -13,7 +13,7 @@ const Post = () => {
     const payload = {
       title,
       author,
-      tags: tags.split(',').map((tag) => tag.trim),
+      tags: tags.split(',').map((tag) => tag.trim()),
       content,
     };
     await http.post('/api/posts', { data: payload });

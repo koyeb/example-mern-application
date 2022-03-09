@@ -29,7 +29,7 @@ const Post = () => {
       <Container className="my-5 text-justified" style={{ maxWidth: '800px' }}>
         <h1>{post.title}</h1>
         <div className="text-secondary mb-4">{formatDate(post.createdAt)}</div>
-        {post.tags?.map((tag) => <span>{tag}</span>)}
+        {post.tags?.map((tag) => <span>{tag} </span>)}
         <div className="h4 mt-5">{post.content}</div>
         <div className="text-secondary mb-5">- {post.author}</div>
         <div className="mb-5">
