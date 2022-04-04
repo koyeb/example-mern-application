@@ -19,10 +19,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  },
-  "nodemonConfig": {
-    "env": {
-      "CONNECTION_STRING": "YOUR_CONNECTION_STRING"
-    }
   }
 }
