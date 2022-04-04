@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const CONNECTION_STRING = `mongodb+srv://samuxyz:${process.env.MONGO_PWD}@blog.dymgs.mongodb.net/Blog?retryWrites=true&w=majority`;
+const CONNECTION_STRING = process.env.CONNECTION_STRING;
 
 const indexRouter = require('./routes/index');
 const postsRouter = require('./routes/posts');

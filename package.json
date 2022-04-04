@@ -22,7 +22,7 @@
   },
   "nodemonConfig": {
     "env": {
-      "MONGO_PWD": "koyeb"
+      "CONNECTION_STRING": "YOUR_CONNECTION_STRING"
     }
   }
 }
