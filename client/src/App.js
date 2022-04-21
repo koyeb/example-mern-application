@@ -14,7 +14,7 @@ function App() {
     <>
       <Navbar bg="dark" expand="lg" variant="dark">
         <Container>
-          <Navbar.Brand href="/">My Blog</Navbar.Brand>
+          <Navbar.Brand href="/">My Blog!</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Nav className="me-auto">
             <Nav.Link href="/posts/new">New</Nav.Link>
