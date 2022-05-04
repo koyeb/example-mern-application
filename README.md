@@ -34,7 +34,7 @@ You need a Koyeb account to successfully deploy and run this application. If you
 
 The fastest way to deploy the MERN application is to click the **Deploy to Koyeb** button below.
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2Fkoyeb%2Fexample-mern-application&branch=main&build_command=yarn build-client&run_command=yarn start&env[CONNECTION_STRING]=&ports[3000]=&name=mern-on-koyeb)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2Fkoyeb%2Fexample-mern-application&branch=main&build_command=yarn%20build-client&run_command=yarn%20start&env[CONNECTION_STRING]=&ports[3000]=&name=mern-on-koyeb)
 
 Clicking on this button brings you to the Koyeb App creation page with everything pre-set to launch this application.
 
