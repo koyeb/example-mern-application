@@ -32,6 +32,7 @@ jobs:
           service-env: "CONNECTION_STRING=@MERN_MONGO_URL"
           service-ports: "3000:http"
           service-routes: "/:3000"
+          git-builder: "buildpack"
           git-build-command: yarn build-client
           git-run-command: yarn start
           skip-cache: true
