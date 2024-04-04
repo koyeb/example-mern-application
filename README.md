@@ -49,15 +49,14 @@ If you want to customize and enhance this application, you need to fork this rep
 If you used the **Deploy to Koyeb** button, you can simply link your service to your forked repository to be able to push changes.
 Alternatively, you can manually create the application as described below.
 
-On the [Koyeb Control Panel](//app.koyeb.com/apps), click the **Create App** button to go to the App creation page.
+On the [Koyeb Control Panel](//app.koyeb.com/apps), on the **Overview** tab, click the **Create Web Service** button to begin.
 
-1. Name your application, for example `mern-blog`. 
-2. For "Deployment method", choose Github.
-3. Select the git repository and specify the branch where you pushed the code to. In my case, `main`.
-4. In application configuration, add the build command "yarn build-client" and the start command "yarn start"
-5. Add a Secret environment variable with the key `CONNECTION_STRING` and the connection string provided by Mongo Atlas.
-6. Enter the port 3000, as this is the one we exposed from the server.
-7. Name the service, for example `main`.
+1. Choose **GitHub** as the deployment method.
+2. Select the git repository where you pushed the code to.
+3. Expand the **Builder** section and click the **override** toggle associated with the **Build command**.  In the field, enter `yarn build-client`.  Enable the **Run command** field and enter `yarn start`.
+4. In the **Environment variables** section, click the **Add variable** button to create a variable called `CONNECTION_STRING` set to the connection string provided by Mongo Atlas.
+5. In the **Exposed ports** section, enter the port **3000**.
+6. Choose a name for your App and Service and click **Deploy**.
 
 You land on the deployment page where you can follow the build of your application. Once the build is completed, your application is being deployed and you will be able to access it via `<YOUR_APP_NAME>-<YOUR_ORG_NAME>.koyeb.app`.
 
